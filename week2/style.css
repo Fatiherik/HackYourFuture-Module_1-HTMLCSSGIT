@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather|Vollkorn|Wallpoet&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background: rgb(244, 247, 248);
+}
+
+header h1{
+  font-family: Merriweather;
+  text-align: center;
+  padding-top:20px;
+}
+
+
+h2 {
+  text-align: center;
+  padding: 10px;
+ 
+}
+
+img {
+  width: 65%;
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+  align-items: center;
+
+}
+
+#grid-floats li {
+  width: 20%;
+  margin: 2%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background: #fff;
+  padding: 1%;
+  box-sizing: border-box;
+  transition: transform 0.5s ease-out, border 0.5s, box-shadow 0.5s;
+  float: left;
+  list-style: none;
+  height: 25rem;
+  color: #2b2b28;
+}
+
+#grid-floats li p {
+  margin-top: 30%;
+  font-size: 15px;
+}
+
+#grid-floats li:first-child p {
+  margin-top: 1%;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+#grid-floats > .grid-item:nth-child(9) p {
+  margin-top: 20%;
+}
+
+#grid-floats > .grid-item:first-child {
+  width: 44%;
+}
+
+
+.grid-item:hover {
+  transform: scale(1.05);
+  border: 3px solid grey;
+  box-shadow: 0 0 10px 5px #3b4246;
+}
+
+/* ---------------- Grids Using Flex------------------ */
+section {
+  clear: both;
+}
+
+#grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+#grid-flex li p {
+  margin-top: 40%;
+  font-size: 15px;
+  text-align: center;
+}
+
+#grid-flex li:first-child p {
+  margin-top: 20%;
+  font-size: 15px;
+}
+
+#grid-flex li {
+  width: 20%;
+  margin: 2%;
+  padding: 1%;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 20px;
+  list-style: none;
+  height: 25rem;
+  background: #fff;
+  color: #000;
+}
+
+
+#grid-flex .grid-item:nth-child(9) p {
+  margin: 10%;
+}
+
+#grid-flex li:first-child {
+  width: 44%;
+}
+
+#grid-flex li:first-child img {
+  width: 35%;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  #grid-floats li {
+    width: 46%;
+  }
+  #grid-floats li:nth-last-child(3) {
+    margin-left: 2%;
+  }
+  #grid-floats .grid-item:first-child {
+    width: 95%;
+  }
+  #grid-flex li {
+    width: 46%;
+  }
+  #grid-flex li:first-child {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #grid-floats li {
+    width: 29%;
+  }
+
+  #grid-floats li:nth-last-child(3) {
+    margin-left: 2%;
+  }
+
+  #grid-floats li:nth-child(1),
+  #grid-floats li:nth-child(2) {
+    width: 46%;
+  }
+  #grid-floats li:nth-child(2) p,
+  #grid-flex li:nth-child(2) p {
+    margin-top: 10%;
+  }
+  #grid-floats li:nth-child(2) img,
+  #grid-flex li:nth-child(2) img {
+    margin-bottom: 0;
+  }
+
+  #grid-flex li {
+    width: 29%;
+  }
+
+  #grid-flex li:nth-child(1),
+  #grid-flex li:nth-child(2) {
+    width: 46%;
+  }
+}

@@ -1,0 +1,7 @@
+1.a) you can create a hidden folder by mkdir .foldername
+	you can create a hidden folder by touch .filename
+1.b) you can display them by using ls
+2) you can do it by using mkdir -f these/folders/are/just/for/fun
+3) you can do it by using 
+echo "first message(Use enter to go down.)
+second message" >> text.txt
